@@ -7,5 +7,26 @@ public class Main {
 
         System.out.println("Lương Ming: "+ e1.getSalary());
         System.out.println("Lương Trang: "+ e2.getSalary());
+
+        Vehicle[] list = {
+                new Car("BMW", 540),
+                new Bike("Ducati", 400),
+                new Train("Vinfast", 678),
+                new Plane("VietNamAirline", 2345)
+        };
+
+        for (Vehicle v: list) {
+            v.move();
+        }
+
+        Animal[] animals = {
+                new Lion("Trang"),
+                new Elephant("Trangg"),
+                new Monkey("Ming")
+        };
+
+        for (Animal a: animals) {
+            a.eat();
+        }
     }
 }
